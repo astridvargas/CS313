@@ -42,7 +42,7 @@
         <div class="gridContainer">
             <div>
                 <h3>A little more about me</h3>
-                <a href="../web/Week02/assignment02.1.html">
+                <a href="Week02/assignment02.1.html">
                     <img class="smallPictures" src="Week02/more.jpg" alt="About">
                 </a>
             </div>
@@ -53,7 +53,7 @@
 
             <div>
                 <h3>Assignments</h3>
-                <a href="../web/Week02/assignment02.2.html">
+                <a href="Week02/assignment02.2.html">
                         <img class="smallPictures" src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="About">
                 </a>
             </div>
