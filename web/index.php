@@ -11,7 +11,7 @@
 
         <!-- CSS File -->
 
-        <link rel="stylesheet" href="assignment02.css">
+        <link rel="stylesheet" href="Week02/assignment02.css">
 
         <!-- Google Fonts -->
 
