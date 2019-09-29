@@ -27,7 +27,7 @@
         <!-- Welcome Picture -->
 
         <div class="container">
-            <img id="mainPicture" src="us.jpg" alt="Us">
+            <img id="mainPicture" src="Week02/us.jpg" alt="Us">
             <div class="content">
                 <h1>Welcome to Astrid Vargas's Website</h1>
             </div>
@@ -43,7 +43,7 @@
             <div>
                 <h3>A little more about me</h3>
                 <a href="../web/Week02/assignment02.1.html">
-                    <img class="smallPictures" src="more.jpg" alt="About">
+                    <img class="smallPictures" src="Week02/more.jpg" alt="About">
                 </a>
             </div>
             
