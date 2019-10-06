@@ -131,3 +131,16 @@ h1 {
 .input-field {
     color: white;
 }  
+
+/* Checkout Page */
+
+.column {
+    float: left;
+    width: 62.31%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

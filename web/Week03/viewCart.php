@@ -64,7 +64,7 @@ session_start();
                         echo "<td>" . ($sno++) . "</td>";
                         echo "<form action='editCart.php' method='post'>";
                         foreach($products as $key => $value) {
-                            if ($key == 2) {
+                            if ($key >= 2) {
                                 echo "<td><input type='text' name='name$key' class='input-field' value='".$value."'></td>";
                                 $q = intval($value);
                             } else if ($key == 1) {
@@ -86,6 +86,10 @@ session_start();
             ?>
         </tbody>
     </table>
+
+    <div align="center">
+        <a href="checkout.php" class="button">Checkout</a>
+    </div>
 
     <!-- ?php
         // foreach($_SESSION as $val) {

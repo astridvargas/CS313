@@ -102,14 +102,23 @@ session_start();
                         <input type="hidden" name="price" value="55">
                     </tr>
 
-                    <!-- <tr>
+                    <tr>
                         <td>Jeron Skateboard</td>
                         <td><<img width="40%" src="skateboard.jpg" alt="Assignment 4"></td>
                         <th>$50</th>
                         <td><input type="text" name="qty" class="input-field"></td>
                         <input type="hidden" name="name" value="Jeron Skateboard">
                         <input type="hidden" name="price" value="50">
-                    </tr> -->
+                    </tr>
+
+                    <tr>
+                        <td>Dunk Contest</td>
+                        <td><<img width="40%" src="https://cdn.shopify.com/s/files/1/1728/9265/products/Deck0919Hoops_1024x1024.jpg?v=1569270127" alt="Assignment 4"></td>
+                        <th>$60</th>
+                        <td><input type="text" name="qty" class="input-field"></td>
+                        <input type="hidden" name="name" value="Dunk Contest">
+                        <input type="hidden" name="price" value="60">
+                    </tr>
 
                     <tr>
                         <td><input type="submit" value="Add to Cart" name="addCart"></td>
