@@ -1,0 +1,133 @@
+/* Add font to the website */
+
+body {
+    background: black;
+    color: white;
+    font-family : 'Roboto', sans-serif;
+}
+
+/* Change NAVBAR color */
+
+nav {
+    background-color: #212D40 !important;
+  }
+
+/* Headers change */
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    margin-right: 100px;
+    text-align: center;
+    
+}
+
+/* Picture Slider Effects */
+
+.slideContainer {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    height: 800px;
+}
+
+/* Logo size */
+
+.logo {
+    /* display: block; */
+    margin-left: 50px;
+    width: 30%;
+    height: 30%;
+}
+
+/* Display slides picutures */
+
+.slides {
+    display: none;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.imagesSlide {
+    width: 100%;
+    margin: auto;
+    height: 800px;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+
+/* Grid for Skateboards */
+
+.skateboardsContainer {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	flex: 1 0 ;
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    text-align: center;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 80%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+/* Buttons */
+
+.center {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    background-color: #9CAFB7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+/* Input text color */
+
+.input-field {
+    color: white;
+}  

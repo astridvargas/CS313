@@ -62,9 +62,5 @@
         <!-- PHP -->
 
         <br><br>
-<!-- 
-        <?php
-        echo "<p>Copyright &copy; 2019" . " Astrid Vargas</p>";
-        ?> -->
     </body>
 </html>
