@@ -14,16 +14,17 @@ $db = get_db();
 
         <?php
 
-            $statement = $db->prepare("SELECT userName_id, usesTelephone_id, userAddres FROM contacts");
+            $statement = $db->prepare("SELECT users_name FROM userName");
             $statement->execute();
         
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         
             {
-	            $userNAme_id = $row['userName_id'];
-	            $userTelephone_id = $row['userTelephone_id'];
-	            $userAddress_id = $row['userAddress_id'];
-    	        echo "<p><strong>$userName_id - $userTelephone_id - $userAddress_id </strong><p>";
+	            $userName_id = $row['users_name'];
+	            // $userTelephone_id = $row['userTelephone_id'];
+	            // $userAddress_id = $row['userAddress_id'];
+                echo "<p><strong> $userName_id </strong><p>";
+                // echo "<p><strong>$userName_id - $userTelephone_id - $userAddress_id </strong><p>";
             }
         ?>
 
