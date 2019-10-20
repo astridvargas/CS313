@@ -18,5 +18,4 @@ function get_db() {
 		echo "Error connecting to DB. Details: $ex";
 		die();
 	}
-	
 }
