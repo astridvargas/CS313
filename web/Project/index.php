@@ -1,37 +1,42 @@
+<?php
+/**********************************************************
+* File: viewScriptures.php
+* Author: Br. Burton
+* 
+* Description: This file shows an example of how to query a
+*   PostgreSQL database from PHP.
+***********************************************************/
+require "dbConnect.php";
+$db = get_db();
+?>
 <!DOCTYPE html>
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Astrid Vargas's Project</title>
-        <link rel="stylesheet" href="project.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	    <title>Scripture List</title>
     </head>
+
     <body>
+    <div>
+        <h1 class='center'>Contacts</h1>
 
-    <a href="../Week02/assignment02.2.html" class="waves-effect waves-light btn center">Go back home</a>
-    <h1 class='center'>Contacts</h1>
+        <?php
+
+            $statement = $db->prepare("SELECT userName_id, usesTelephone_id, userAddres FROM contacts");
+            $statement->execute();
         
-    <div class="row">
-        <div class="col s4 pull-s8">
-            <table>
-                <thead>
-                    <tr>
-                        <th><h3>Name</h3></th>
-                        <th>Phone Number</th>
-                        <th>Addres</th>
-                    </tr>
-                </thead>
+            // Go through each result
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+        
+            {
+	            $userNAme_id = $row['userNAme_id'];
+	            $userTelephone_id = $row['userTelephone_id'];
+	            $userAddress_id = $row['userAddress_id'];
+    	        echo "<p><strong>$userName_id - $userTelephone_id - $userAddress_id </strong><p>";
+            }
+        ?>
 
-                <tbody>
-                    <tr>
-                       
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+
     </div>
 
-    <script src="" async defer></script>
-    </body>
+</body>
 </html>
