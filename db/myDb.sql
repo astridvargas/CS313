@@ -8,7 +8,7 @@ CREATE TABLE userName (
 
 CREATE TABLE userTelephone (
     id SERIAL NOT NULL PRIMARY KEY,
-    user_telephone INTEGER NOT NULL
+    user_telephone VARCHAR NOT NULL
 );
 
 CREATE TABLE userAddress (
@@ -24,10 +24,10 @@ CREATE TABLE contacts (
 );
 
 INSERT INTO userName(users_name)
-    VALUES ("Astrid Lujo");
+    VALUES ('Astrid Lujo');
 
 INSERT INTO userTelephone(user_telephone)
-    VALUES ("333-333-3333");
+    VALUES (333-333-3333);
 
 INSERT INTO userAddress(street_address)
-    VALUES ("111 Fake Street, Rexburg ID 83440");
+    VALUES ('111 Fake Street, Rexburg ID 83440');
