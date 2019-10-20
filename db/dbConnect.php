@@ -1,6 +1,5 @@
 <?php
 function get_db() {
-	$db = NULL;
 	try {
         
         $dburl = getenv('DATABASE_URL');
@@ -14,11 +13,12 @@ function get_db() {
 		$dbName = ltrim($dbopts["path"],'/');
         
 		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-		$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        return $db;
 	}
 	catch (PDOException $ex) {
 		echo "Error connecting to DB. Details: $ex";
 		die();
 	}
-	return $db;
+	
 }
