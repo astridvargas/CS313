@@ -1,7 +1,6 @@
 CREATE DATABASE contacts;
 
 CREATE TABLE userName (
-
     id SERIAL NOT NULL PRIMARY KEY,
     users_name VARCHAR(100) NOT NULL);
 
