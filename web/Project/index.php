@@ -9,7 +9,7 @@
     </head>
     <body>
 
-    <a href="../Week02/assignment02.2.html" class="waves-effect waves-light btn">Go back home</a>
+    <a href="../Week02/assignment02.2.html" class="waves-effect waves-light btn center">Go back home</a>
     <h1 class='center'>Contacts</h1>
         
     <div class="row">

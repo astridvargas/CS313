@@ -6,4 +6,9 @@ body {
 
 .center {
     text-align: center;
+    justify-content: center;
+}
+
+.buttonColor {
+    background: white;;
 }
