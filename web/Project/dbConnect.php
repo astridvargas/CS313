@@ -1,24 +1,26 @@
 <?php
 function get_db() {
-	try {
 
-		$dbURL = getenv('DATABASE_URL');
+    try {
 
-		$dbopts = parse_url($dbUrl);
+        $dbUrl = getenv('DATABASE_URL');
 
-		$dbHost = $dbopts["host"];
-		$dbPort = $dbopts["port"];
-		$dbUser = $dbopts["user"];
-		$dbPassword = $dbopts["pass"];
-		$dbName = ltrim($dbopts["path"],'/');
-
-		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-		$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-		return $db;
-	}
-	catch (PDOException $ex) {
-		echo "Error connecting to DB. Details: $ex";
-		die();
-	}
-	
+        $dbopts = parse_url($dbUrl);
+        
+        $dbHost = $dbopts["host"];
+        $dbPort = $dbopts["port"];
+        $dbUser = $dbopts["user"];
+        $dbPassword = $dbopts["pass"];
+        $dbName = ltrim($dbopts["path"],'/');
+    
+        $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+        $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        return $db;
+    }
+    
+    catch (PDOException $ex) {
+        echo "Error connecting to DB. Details: $ex";
+        die();
+    }
 }
+?>

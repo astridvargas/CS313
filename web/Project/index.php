@@ -18,12 +18,11 @@ $db = get_db();
             $statement->execute();
         
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        
             {
-	            $userName_id = $row['users_name'];
+	            $user = $row['users_name'];
 	            // $userTelephone_id = $row['userTelephone_id'];
 	            // $userAddress_id = $row['userAddress_id'];
-                echo "<p><strong> $userName_id </strong><p>";
+                echo "<p><strong> $user </strong><p>";
                 // echo "<p><strong>$userName_id - $userTelephone_id - $userAddress_id </strong><p>";
             }
         ?>
