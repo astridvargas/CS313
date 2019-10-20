@@ -27,7 +27,7 @@ INSERT INTO userName(users_name)
     VALUES ('Astrid Lujo');
 
 INSERT INTO userTelephone(user_telephone)
-    VALUES (333-333-3333);
+    VALUES ('333-333-3333');
 
 INSERT INTO userAddress(street_address)
     VALUES ('111 Fake Street, Rexburg ID 83440');
