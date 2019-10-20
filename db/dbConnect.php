@@ -4,8 +4,6 @@ function get_db() {
         
         $dburl = getenv('DATABASE_URL');
         $duopts = parse_url($dburl);
-
-		$dbopts = parse_url($dbUrl);
 		$dbHost = $dbopts["host"];
 		$dbPort = $dbopts["port"];
 		$dbUser = $dbopts["user"];
