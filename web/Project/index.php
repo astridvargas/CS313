@@ -17,7 +17,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th><h3>Name</h3></th>
                         <th>Phone Number</th>
                         <th>Addres</th>
                     </tr>
