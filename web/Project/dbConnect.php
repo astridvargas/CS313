@@ -8,7 +8,7 @@ function get_db() {
 
 		$dbHost = $dbopts["host"];
 		$dbPort = $dbopts["port"];
-		$dbUser = $dbipts["user"];
+		$dbUser = $dbopts["user"];
 		$dbPassword = $dbopts["pass"];
 		$dbName = ltrim($dbopts["path"],'/');
 
