@@ -11,6 +11,10 @@
 
     <h1 class='center'>Contacts</h1>
         
+    <div class="row">
+        <div class="col s5 pull-s7"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>
+    </div>
+
     <script src="" async defer></script>
     </body>
 </html>
