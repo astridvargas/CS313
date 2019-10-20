@@ -3,7 +3,7 @@ CREATE DATABASE contacts;
 CREATE TABLE userName (
 
     id SERIAL NOT NULL PRIMARY KEY,
-    user_name VARCHAR(100) NOT NULL
+    users_name VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE userTelephone (
@@ -23,7 +23,7 @@ CREATE TABLE contacts (
     userAddress_id INT NOT NULL REFERENCES userAddress(id)
 );
 
-INSERT INTO userName(user_name)
+INSERT INTO userName(users_name)
     VALUES ("Astrid Lujo");
 
 INSERT INTO userTelephone(user_telephone)
