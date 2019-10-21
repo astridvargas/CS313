@@ -12,9 +12,17 @@ $db = get_db();
 
     <body>
     <div>
-        <h1 class='center'>Contacts</h1>
 
-        <?php
+        <div class="container">
+            <div class="row">
+                <div class="col s8 offset-s2">
+                    <h1 class='center'>Contacts</h1>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- <php
 
             $statement = $db->prepare("SELECT users_name FROM userName");
             $statement->execute();
@@ -23,13 +31,13 @@ $db = get_db();
             {
                 $user = $row['users_name'];
                 $telephone = $row['user_telephone'];
-	            // $userTelephone_id = $row['userTelephone_id'];
-	            // $userAddress_id = $row['userAddress_id'];
+	            $userTelephone_id = $row['userTelephone_id'];
+	            $userAddress_id = $row['userAddress_id'];
                 echo "<p><strong> $user </strong><p>";
                 echo "<p><strong> $telephone </strong><p>";
-                // echo "<p><strong>$userName_id - $userTelephone_id - $userAddress_id </strong><p>";
+                echo "<p><strong>$userName_id - $userTelephone_id - $userAddress_id </strong><p>";
             }
-        ?>
+        ?> -->
 
 
     </div>
