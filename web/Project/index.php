@@ -17,11 +17,12 @@ $db = get_db();
             <div class="row">
                 <div class="col s8 offset-s2">
                     <h1 class='center'>Contacts</h1>
-                    <h4>Add a contact</h4>
+                    <h4 class='center'>Add a contact</h4>
 
                     <form id="contact" action="#">
                         <div class="addContacts">
                             <label for="Name">Name:</label>
+                            <input type="text" placeholder="Contact's Name" id="name">
                         </div>
                     </form>
                 </div>
