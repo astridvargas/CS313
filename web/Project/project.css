@@ -20,4 +20,10 @@ body {
 
 .input-field label {
     color: #000;
-  }
+}
+
+.sendButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
