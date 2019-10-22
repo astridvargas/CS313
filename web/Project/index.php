@@ -14,12 +14,13 @@ $db = get_db();
 
     <div>
         <br>
+        <h1>Agenda</h1>
+        <br><br>
         
         <div class="container">
             <div class="row">
                 <div class="col s8 offset-s2">
-                    <h1 class='center'>Contacts</h1>
-                    <h5 class='center'>Add a contact</h5>
+                    <h2 class='center'>Add a contact</h2>
                     
                     <form id="contact" action="#">
                         <div class="addContacts">
@@ -52,7 +53,7 @@ $db = get_db();
         <div class="container">
             <div class="row">
                 <div class="col s8 offset-s2">
-                    <h1>Contacts List</h1>
+                    <h2 class="center">Contacts List</h2>
                 </div>
             </div>
         </div>

@@ -3,6 +3,12 @@ body {
     color: black;
 }
 
+h1 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
 .center {
     text-align: center;
     justify-content: center;
