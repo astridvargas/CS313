@@ -20,7 +20,7 @@ $db = get_db();
             <div class="row">
                 <div class="col s8 offset-s2">
                     <h1 class='center'>Contacts</h1>
-                    <h4 class='center'>Add a contact</h4>
+                    <h5 class='center'>Add a contact</h5>
 
                     <form id="contact" action="#">
                         <div class="addContacts">
