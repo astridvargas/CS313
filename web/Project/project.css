@@ -1,5 +1,4 @@
 body {
-    /* background: #E2E2E2; */
     background: #19323C;
     color: black;
 }
@@ -16,14 +15,17 @@ body {
 .container {
     background: #E2E2E2;
     border-radius: 25px;
+    box-shadow: gray;
 }
 
 .input-field label {
     color: #000;
 }
 
-.sendButton {
+.buttonContainer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+

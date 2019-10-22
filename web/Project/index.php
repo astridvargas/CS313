@@ -38,8 +38,8 @@ $db = get_db();
                             <input type="text" placeholder="Address" id="address">
                         </div>
 
-                       <div class="sendButton">
-                            <input type="submit" value="Add Contact">
+                       <div class="buttonContainer">
+                            <input class="submitButton" type="submit" value="Add Contact">
                         </div>
 
                         <br>
