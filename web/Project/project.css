@@ -1,12 +1,14 @@
 body {
     background: #19323C;
     color: black;
+    font-family: 'Fira Code', monospace;
 }
 
-h1 {
+h1, h3 {
     text-align: center;
     justify-content: center;
     color: white;
+    font-family: 'Squada One', cursive;
 }
 
 .center {

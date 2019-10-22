@@ -8,13 +8,14 @@ $db = get_db();
         <title>Contacts</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="project.css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Code|Squada+One&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
     <div>
         <br>
-        <h1>Agenda</h1>
+        <h1>Contacts</h1>
         <br><br>
         
         <div class="container">
@@ -53,7 +54,7 @@ $db = get_db();
         <div class="container">
             <div class="row">
                 <div class="col s8 offset-s2">
-                    <h3 class="center">Contacts List</h3>
+                    <h3 class="center">List of Contacts</h3>
                 </div>
             </div>
         </div>
