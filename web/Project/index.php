@@ -11,7 +11,10 @@ $db = get_db();
     </head>
 
     <body>
+
     <div>
+
+        <br>
 
         <div class="container">
             <div class="row">
@@ -35,7 +38,7 @@ $db = get_db();
                             <input type="text" placeholder="Address" id="address">
                         </div>
 
-                        <div class="sendButton">
+                       <div class="sendButton">
                             <input type="submit" value="Add Contact">
                         </div>
 
@@ -43,7 +46,7 @@ $db = get_db();
                     </form>
                 </div>
             </div>
-        </div>
+    </div>
         
 
         <!-- <php
