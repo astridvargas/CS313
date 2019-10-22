@@ -4,10 +4,17 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
-h1, h3 {
+h1 {
     text-align: center;
     justify-content: center;
     color: white;
+    font-family: 'Squada One', cursive;
+}
+
+h3 {
+    text-align: center;
+    justify-content: center;
+    color: black;
     font-family: 'Squada One', cursive;
 }
 
