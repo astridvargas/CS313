@@ -24,6 +24,20 @@ $db = get_db();
                             <label for="Name">Name:</label>
                             <input type="text" placeholder="Contact's Name" id="name">
                         </div>
+
+                        <div class="addContacts">
+                            <label for="number">Phone Number:</label>
+                            <input type="text" placeholder="Number" id="number">
+                        </div>
+
+                        <div class="addContacts">
+                            <label for="address">Address:</label>
+                            <input type="text" placeholder="Address" id="address">
+                        </div>
+
+                        <div class="sendButton">
+                            <input type="submit" value="Add Contact">
+                        </div>
                     </form>
                 </div>
             </div>
