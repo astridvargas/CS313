@@ -114,12 +114,11 @@ $db = get_db();
                                     <td>111 Fake Address Rexburg, Idaho 83440</td>
                                     <td>
                                         <a class= "editButton" href="#">
-                                            
+                                            <i class="small material-icons">edit</i>
                                         </a>
 
-                                        <button type="button" class="editButton">
-                                        <i class="tiny material-icons">delete</i>
-                                            Delete
+                                        <button type="button" class="deleteButton">
+                                            <i class="small material-icons">delete</i>
                                         </button>
                                     </td>
                                 </tr>
