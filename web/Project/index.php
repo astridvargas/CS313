@@ -57,6 +57,7 @@ $db = get_db();
                     <h3 class="center">List of Contacts</h3>
 
                     <input type="text" id="search" placeholder="Search Contacts">
+                    <p class="total">Total: <span>2</span> Contacts</p>
                 </div>
             </div>
         </div>
