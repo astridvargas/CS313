@@ -55,6 +55,8 @@ $db = get_db();
             <div class="row">
                 <div class="col s8 offset-s2">
                     <h3 class="center">List of Contacts</h3>
+
+                    <input type="text" id="search" placeholder="Search Contacts">
                 </div>
             </div>
         </div>
