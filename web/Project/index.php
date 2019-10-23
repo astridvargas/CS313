@@ -58,6 +58,31 @@ $db = get_db();
 
                     <input type="text" id="search" placeholder="Search Contacts">
                     <p class="total">Total: <span>2</span> Contacts</p>
+                    
+                    <div class="tableContainer">
+                        <table class="highlight">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone Number</th>
+                                    <th>Address</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Astrid Vargas</td>
+                                    <td>385-333-6428</td>
+                                    <td>111 Fake Address Rexburg, Idaho 83440</td>
+                                    <td>
+                                        <a href="#"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
                 </div>
             </div>
         </div>
