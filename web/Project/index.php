@@ -9,6 +9,7 @@ $db = get_db();
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="project.css">
         <link href="https://fonts.googleapis.com/css?family=Fira+Code|Squada+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <body>
@@ -80,7 +81,13 @@ $db = get_db();
                                     <td>385-333-6428</td>
                                     <td>111 Fake Address Rexburg, Idaho 83440</td>
                                     <td>
-                                        <a href="#"></a>
+                                        <a href="#">
+                                            
+                                        </a>
+
+                                        <button type="button">
+                                            <i class="delete"></i>
+                                        </button>
                                     </td>
                                 </tr>
                             </tbody>
