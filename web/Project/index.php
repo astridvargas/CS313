@@ -91,6 +91,38 @@ $db = get_db();
                                         </button>
                                     </td>
                                 </tr>
+
+                                <tr>
+                                    <td>Chris Lujo</td>
+                                    <td>650-826-7438</td>
+                                    <td>111 Fake Address Rexburg, Idaho 83440</td>
+                                    <td>
+                                        <a class= "editButton" href="#">
+                                            
+                                        </a>
+
+                                        <button type="button" class="editButton">
+                                            <!-- <i class="delete"></i> -->
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Kenneth Vargas</td>
+                                    <td>208-678-3134</td>
+                                    <td>111 Fake Address Rexburg, Idaho 83440</td>
+                                    <td>
+                                        <a class= "editButton" href="#">
+                                            
+                                        </a>
+
+                                        <button type="button" class="editButton">
+                                            <!-- <i class="delete"></i> -->
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
