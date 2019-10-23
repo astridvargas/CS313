@@ -118,7 +118,7 @@ $db = get_db();
                                         </a>
 
                                         <button type="button" class="editButton">
-                                            <!-- <i class="delete"></i> -->
+                                        <i class="large material-icons">insert_chart</i>
                                             Delete
                                         </button>
                                     </td>
