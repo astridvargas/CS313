@@ -16,13 +16,13 @@ $db = get_db();
 
     <div>
         <br>
-        <h1>Contacts</h1>
+        <h1>Edit Contact</h1>
         <br><br>
         
         <div class="container">
             <div class="row">
                 <div class="col s8 offset-s2">
-                    <h3 class='center'>Add a contact</h3>
+                    <h3 class='center'>Edit your contacts information</h3>
                     
                     <form id="contact" action="#">
                         <div class="addContacts">
