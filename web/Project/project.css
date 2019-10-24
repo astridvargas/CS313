@@ -46,9 +46,16 @@ h3 {
 .editButton {
     background-color: transparent !important;
     border: none;
+    text-decoration: none;
 }
 
 .deleteButton {
     background-color: transparent !important;
     border: none;
+    text-decoration: none;
+}
+
+.total {
+    margin: 2rem 0;
+    font-size: 2rem;
 }

@@ -60,7 +60,7 @@ $db = get_db();
                     <input type="text" id="search" placeholder="Search Contacts">
                     
                     <div class="center">
-                    <p class="total">Total: <span>2</span> Contacts</p>
+                        <p class="total">Total: <span>2</span> Contacts</p>
                     </div>
                     
                     
