@@ -52,7 +52,7 @@ $db = get_db();
 
         <br>
 
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col s8 offset-s2">
                     <h3 class="center">List of Contacts</h3>
@@ -126,26 +126,7 @@ $db = get_db();
                     
                 </div>
             </div>
-        </div>
-        
-
-        <!-- <php
-
-            $statement = $db->prepare("SELECT users_name FROM userName");
-            $statement->execute();
-        
-            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-            {
-                $user = $row['users_name'];
-                $telephone = $row['user_telephone'];
-	            $userTelephone_id = $row['userTelephone_id'];
-	            $userAddress_id = $row['userAddress_id'];
-                echo "<p><strong> $user </strong><p>";
-                echo "<p><strong> $telephone </strong><p>";
-                echo "<p><strong>$userName_id - $userTelephone_id - $userAddress_id </strong><p>";
-            }
-        ?> -->
-
+        </div> -->
 
     </div>
 
