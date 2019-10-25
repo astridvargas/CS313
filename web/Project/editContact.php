@@ -14,7 +14,7 @@ $db = get_db();
 
     <body>
 
-    <div>
+    <div class="center">
         <a class="goBack" href="index.php">
             Home
         </a>
