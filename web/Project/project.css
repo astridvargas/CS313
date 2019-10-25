@@ -59,3 +59,17 @@ h3 {
     margin: 2rem 0;
     font-size: 1.5rem;
 }
+
+/* Go back Button */
+
+.goBack {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}

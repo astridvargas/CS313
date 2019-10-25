@@ -15,6 +15,12 @@ $db = get_db();
     <body>
 
     <div>
+        <a class="goBack" href="index.php">
+            Home
+        </a>
+    </div>
+
+    <div>
         <br>
         <h1>Edit Contact</h1>
         <br><br>
