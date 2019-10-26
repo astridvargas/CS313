@@ -7,6 +7,10 @@ function eventListener() {
 }
 
 function readForm(e) {
-    console.log(e);
+    // console.log(e);
+    e.preventDefault();
+
+    const name = document.querySelector('#name').value;
+    console.log(name);
 
 }
