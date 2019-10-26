@@ -18,7 +18,7 @@ function readForm(e) {
         areTheInputsEmpty();
     }
     else {
-        continue;
+        console.log("Empty")
     }
 }
 
