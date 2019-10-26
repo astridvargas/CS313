@@ -129,7 +129,7 @@ $db = get_db();
         </div>
         
 
-        <?php
+        <!-- <php
 
             $statement = $db->prepare("SELECT users_name FROM userName");
             $statement->execute();
@@ -144,10 +144,12 @@ $db = get_db();
                 echo "<p><strong> $telephone </strong><p>";
                 echo "<p><strong>$userName_id - $userTelephone_id - $userAddress_id </strong><p>";
             }
-        ?>
+        ?> -->
 
 
     </div>
+
+    <script src="project.js" async defer></script>
 
 </body>
 </html>
