@@ -36,7 +36,8 @@ function areTheInputsEmpty() {
         notification.classList.add('visible');
         
         setTimeout(() => {
-            notification.classList.remove('visible'); 
+            notification.classList.remove('visible');
+            notification.remove();
         }, 3000)
     }, 100);
 }
