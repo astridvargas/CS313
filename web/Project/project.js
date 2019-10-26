@@ -27,5 +27,5 @@ function areTheInputsEmpty() {
     const notification = document.createElement('div');
     notification.textContent = "Error";
 
-    contacts.insertBefore(notification, document.querySelector('form'));
+    contacts.insertBefore(notification, document.querySelector('form div'));
 }
