@@ -15,7 +15,8 @@ function readForm(e) {
     const address = document.querySelector('#address').value;
     
     if(name === '' || number === '' || address === '') {
-        areTheInputsEmpty();
+        areTheInputsEmpty("Please fill out all the inputs", "Error");
+        areTheInputsEmpty("Successfully added a new contact", "Error");
     }
     else {
         console.log("Empty")
@@ -23,10 +24,10 @@ function readForm(e) {
 }
 
 // Check if the text inputs are empty
-function areTheInputsEmpty() {
+function areTheInputsEmpty(message, type) {
     const notification = document.createElement('div');
-    notification.classList.add('notification');
-    notification.textContent = "Error";
+    notification.classList.add(type, 'notification', shadow,);
+    notification.textContent = errorMessage;
 
     // Add the Error
     contacts.insertBefore(notification, document.querySelector('form div'));
@@ -37,7 +38,11 @@ function areTheInputsEmpty() {
         
         setTimeout(() => {
             notification.classList.remove('visible');
-            notification.remove();
+            
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 500)
         }, 3000)
     }, 100);
 }

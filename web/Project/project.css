@@ -83,10 +83,19 @@ h3 {
     padding: 1rem 3rem;
     opacity: 0;
     color: white;
-    
+    transition: opacity 0.5s ease;
 }
 
 .visible {
     opacity: 1;
+}
 
+.addedContact {
+    background: #9CBFA7;
+    color: black;
+}
+
+.missedInput {
+    background: #4D243D;
+    color: white;
 }
