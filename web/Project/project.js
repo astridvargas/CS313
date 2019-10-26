@@ -25,6 +25,7 @@ function readForm(e) {
 // Check if the text inputs are empty
 function areTheInputsEmpty() {
     const notification = document.createElement('div');
+    notification.classList.add('notification');
     notification.textContent = "Error";
 
     // Add the Error
@@ -35,7 +36,7 @@ function areTheInputsEmpty() {
         notification.classList.add('visible');
         
         setTimeout(() => {
-            notification.classList.remove('visible');
+            notification.classList.remove('visible'); 
         }, 3000)
     }, 100);
 }

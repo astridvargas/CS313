@@ -73,3 +73,18 @@ h3 {
     color: black;
     font-weight: bold;
 }
+
+/* Notification style */
+
+.notification {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem 3rem;
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+
+}
