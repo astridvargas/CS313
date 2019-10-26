@@ -25,8 +25,8 @@ function readForm(e) {
 // Check if the text inputs are empty
 function areTheInputsEmpty(message, type) {
     const notification = document.createElement('div');
-    notification.classList.add(type, 'notification', shadow,);
-    notification.textContent = errorMessage;
+    notification.classList.add(type, 'notification', 'shadow',);
+    notification.textContent = message;
 
     // Add the Error
     contacts.insertBefore(notification, document.querySelector('form div'));
