@@ -16,7 +16,6 @@ function readForm(e) {
     
     if(name === '' || number === '' || address === '') {
         areTheInputsEmpty("Please fill out all the inputs", "Error");
-        areTheInputsEmpty("Successfully added a new contact", "Error");
     }
     else {
         console.log("Empty")
