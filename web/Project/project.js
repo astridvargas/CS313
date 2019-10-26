@@ -11,6 +11,21 @@ function readForm(e) {
     e.preventDefault();
 
     const name = document.querySelector('#name').value;
-    console.log(name);
+    const number = document.querySelector('#number').value;
+    const address = document.querySelector('#address').value;
+    
+    if(name === '' || number === '' || address === '') {
+        areTheInputsEmpty();
+    }
+    else {
+        continue;
+    }
+}
 
+// Check if the text inputs are empty
+function areTheInputsEmpty() {
+    const notification = document.createElement('div');
+    notification.textContent = "Error";
+
+    contacts.insertBefore(notification, document.querySelector('form'));
 }
