@@ -78,7 +78,11 @@ $db = get_db();
 
                             <tbody>
                                 <tr>
-                                    <td>Astrid Vargas</td>
+                                    <td>
+                                        <?php
+                                            echo "<p>$userName_id</p>";
+                                        ?>
+                                    </td>
                                     <td>385-333-6428</td>
                                     <td>111 Fake Address Rexburg, Idaho 83440</td>
                                     <td>
