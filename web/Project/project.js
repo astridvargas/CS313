@@ -26,7 +26,7 @@ function readForm(e) {
         contactInfo.append('address', address);
         contactInfo.append('action', action);
 
-        console.log(contactInfo);
+        console.log(...contactInfo);
 
         if(action === 'create') {
 
