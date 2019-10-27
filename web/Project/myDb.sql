@@ -23,7 +23,7 @@ CREATE TABLE contacts {
     address_id INT NOT NULL REFERENCES address.name(id)
 }
 
-INSERT INTO _name(user_name)
+INSERT INTO _name(users_name)
     VALUES ("Astrid Lujo");
 
 INSERT INTO _telephone(user_telephone)
