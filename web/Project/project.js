@@ -46,8 +46,6 @@ function addToDB(data) {
     xhr.onload = function() {
         if(this.status === 200) {
             const answer = JSON.parse(xhr.responseText);
-            console.log(xhr.responseText);
-            console.log(answer.address);
         }
     }
 
