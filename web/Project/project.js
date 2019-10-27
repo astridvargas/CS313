@@ -26,15 +26,30 @@ function readForm(e) {
         contactInfo.append('address', address);
         contactInfo.append('action', action);
 
-        console.log(...contactInfo);
+        // console.log(...contactInfo);
 
         if(action === 'create') {
-
+            addToDB(contactInfo);
         }
         else {
 
         }
     }
+}
+
+// Add to Database through Ajax
+function addToDB(data) {
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('POST', 'contactsModel.php', true);
+
+    xhr.onload = function() {
+        if(this.status === 200) {
+            console.log(xhr.responseText);
+        }
+    }
+
+    xhr.send(data);
 }
 
 // Check if the text inputs are empty
