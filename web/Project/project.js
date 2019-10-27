@@ -45,7 +45,7 @@ function addToDB(data) {
 
     xhr.onload = function() {
         if(this.status === 200) {
-            console.log(xhr.responseText);
+            console.log(JSON.parse(xhr.responseText));
         }
     }
 
