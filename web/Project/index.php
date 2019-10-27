@@ -139,7 +139,7 @@ $db = get_db();
             {
 
                 echo '<p>';
-		        echo '<strong>' . $row['name'] . ' ' . $row['number'] . ' ' . $row['address'];
+		        echo '<strong>' . $row['users_name'] . ' ' . $row['user_telephone'] . ' ' . $row['street_address'];
 		        // echo $row['verse'] . '</strong>' . ' - ' . $row['content'];
 		        // echo '<br />';
 		        echo 'Topics: ';

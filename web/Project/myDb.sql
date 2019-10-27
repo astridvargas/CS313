@@ -3,7 +3,7 @@ CREATE DATABASE contacts;
 CREATE TABLE _name {
 
     id SERIAL NOT NULL PRIMARY KEY,
-    user_name VARCHAR(100) NOT NULL
+    users_name VARCHAR(100) NOT NULL
 };
 
 CREATE TABLE _telephone {
