@@ -132,14 +132,14 @@ $db = get_db();
 
         <?php
 
-            $statement = $db->prepare("SELECT users_name FROM userName");
+            $statement = $db->prepare('SELECT _name, _telephone, _address FROM contacts');
             $statement->execute();
         
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
 
                 echo '<p>';
-		        echo '<strong>' . $row['name_id'] . ' ' . $row['user_telephone'] . ' ' . $row['street_address'];
+		        echo '<strong>' . $row['_name'] . ' ' . $row['_telephone'] . ' ' . $row['_address'];
 		        // echo $row['verse'] . '</strong>' . ' - ' . $row['content'];
 		        // echo '<br />';
 		        echo 'Topics: ';
