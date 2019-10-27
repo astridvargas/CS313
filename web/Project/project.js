@@ -13,12 +13,27 @@ function readForm(e) {
     const name = document.querySelector('#name').value;
     const number = document.querySelector('#number').value;
     const address = document.querySelector('#address').value;
+    const action = document.querySelector('#action').value;
     
     if(name === '' || number === '' || address === '') {
         areTheInputsEmpty("Please fill out all the inputs", "Error");
     }
     else {
-        console.log("Empty")
+        // Validation to Ajax
+        const contactInfo = new FormData();
+        contactInfo.append('name', name);
+        contactInfo.append('number', number);
+        contactInfo.append('address', address);
+        contactInfo.append('action', action);
+
+        console.log(contactInfo);
+
+        if(action === 'create') {
+
+        }
+        else {
+
+        }
     }
 }
 

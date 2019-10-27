@@ -40,7 +40,8 @@ $db = get_db();
                             <input type="text" placeholder="Address" id="address">
                         </div>
 
-                       <div class="buttonContainer">
+                        <div class="buttonContainer">
+                            <input type="hidden" id="action" value="Create">
                             <input class="submitButton" type="submit" value="Add Contact">
                         </div>
 
