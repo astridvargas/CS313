@@ -80,7 +80,10 @@ $db = get_db();
                                 <tr>
                                     <td>
                                         <?php
+                                        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+                                        {
                                             echo "<p>$userName_id</p>";
+                                        }
                                         ?>
                                     </td>
                                     <td>385-333-6428</td>
