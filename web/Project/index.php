@@ -163,8 +163,9 @@ $db = get_db();
                                 <td>$name </td>
                                 <td>$telephone </td>
                                 <td>$address </td>
-                                <td> 
-                                <a class= "editButton" href="editContact.php">
+                                <td>";
+
+                            echo'<a class= "editButton" href="editContact.php">
                                     <i class="small material-icons">edit</i>
                                 </a>
 
@@ -173,7 +174,7 @@ $db = get_db();
                                 </button>
 
                                 </td></tr>
-                            ";
+                            ';
                             // echo "<p><strong>$name - $telephone - $address </strong><p>";
                         }
 
