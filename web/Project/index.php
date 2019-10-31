@@ -158,9 +158,16 @@ $db = get_db();
                             // echo "<p><strong> $user </strong><p>";
                             // echo "<p><strong> $telephone </strong><p>";
 
-                        
-                            echo "<p><strong>$name - $telephone - $address </strong><p>";
+                            echo '<tbody>
+                                <tr>
+                                <td>$name </td>
+                                <td>$telephone </td>
+                                <td>$address </td></tr>
+                            ';
+                            // echo "<p><strong>$name - $telephone - $address </strong><p>";
                         }
+
+                        echo '</tbody></table>';
                     ?>
                 </div>
             </div>
