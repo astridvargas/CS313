@@ -162,7 +162,17 @@ $db = get_db();
                                 <tr>
                                 <td>$name </td>
                                 <td>$telephone </td>
-                                <td>$address </td></tr>
+                                <td>$address </td>
+                                <td> 
+                                <a class= "editButton" href="editContact.php">
+                                    <i class="small material-icons">edit</i>
+                                </a>
+
+                                <button type="button" class="deleteButton">
+                                    <i class="small material-icons">delete</i>
+                                </button>
+
+                                </td></tr>
                             ";
                             // echo "<p><strong>$name - $telephone - $address </strong><p>";
                         }
