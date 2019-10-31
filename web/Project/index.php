@@ -42,7 +42,7 @@ $db = get_db();
 
                         <div class="buttonContainer">
                             <input type="hidden" id="action" value="create">
-                            <input class="submitButton" type="submit" value="Add Contact">
+                            <input onclick="readForm()" class="submitButton" type="submit" value="Add Contact">
                         </div>
 
                         <br>
