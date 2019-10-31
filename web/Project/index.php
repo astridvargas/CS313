@@ -132,19 +132,11 @@ $db = get_db();
         <div class="container">
             <div class="row">
                 <div class="col s8 offset-s2">
+                
                     <?php
 
                         $statement = $db->prepare("SELECT * FROM contacts");
                         $statement->execute();
-                    
-                        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-                        {
-                            $name = $row['_name'];
-                            $telephone = $row['_telephone'];
-                            $address = $row['_address'];
-                            // $userAddress_id = $row['userAddress_id'];
-                            // echo "<p><strong> $user </strong><p>";
-                            // echo "<p><strong> $telephone </strong><p>";
 
                         echo '<div class="tableContainer">
                             <table class="highlight">
@@ -155,10 +147,18 @@ $db = get_db();
                                     <th>Address</th>
                                     <th>Actions</th>
                                 </tr>
-                            </thead>
+                            </thead>';
+                    
+                        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+                        {
+                            $name = $row['_name'];
+                            $telephone = $row['_telephone'];
+                            $address = $row['_address'];
+                            // $userAddress_id = $row['userAddress_id'];
+                            // echo "<p><strong> $user </strong><p>";
+                            // echo "<p><strong> $telephone </strong><p>";
 
-                            <tbody>
-                                <tr>';
+                        
                             echo "<p><strong>$name - $telephone - $address </strong><p>";
                         }
                     ?>
