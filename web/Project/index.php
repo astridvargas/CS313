@@ -52,10 +52,94 @@ $db = get_db();
         </div>
 
         <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s8 offset-s2">
+                    <h3 class="center">List of Contacts</h3>
+
+                    <input type="text" id="search" placeholder="Search Contacts">
+                    
+                    <div class="center">
+                        <p class="total">Total: <span>2</span> Contacts</p>
+                    </div>
+                    
+                    
+                    <div class="tableContainer">
+                        <table class="highlight">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone Number</th>
+                                    <th>Address</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Astrid Vargas</td>
+                                    <td>385-333-6428</td>
+                                    <td>111 Fake Address Rexburg, Idaho 83440</td>
+                                    <td>
+                                        <a class= "editButton" href="editContact.php">
+                                            <i class="small material-icons">edit</i>
+                                        </a>
+
+                                        <button type="button" class="deleteButton">
+                                            <i class="small material-icons">delete</i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Chris Lujo</td>
+                                    <td>650-826-7438</td>
+                                    <td>111 Fake Address Rexburg, Idaho 83440</td>
+                                    <td>
+                                        <a class= "editButton" href="editContact.php">
+                                            <i class="small material-icons">edit</i>
+                                        </a>
+
+                                        <button type="button" class="deleteButton">
+                                            <i class="small material-icons">delete</i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Kenneth Vargas</td>
+                                    <td>208-678-3134</td>
+                                    <td>111 Fake Address Rexburg, Idaho 83440</td>
+                                    <td>
+                                        <a class= "editButton" href="editContact.php">
+                                            <i class="small material-icons">edit</i>
+                                        </a>
+
+                                        <button type="button" class="deleteButton">
+                                            <i class="small material-icons">delete</i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
         
         <div class="container">
             <div class="row">
                 <div class="col s8 offset-s2">
+
+                <h3 class="center">List of Contacts</h3>
+
+                    <input type="text" id="search" placeholder="Search Contacts">
+                    
+                    <div class="center">
+                        <p class="total">Total: <span>2</span> Contacts</p>
+                    </div>
                 
                     <?php
 
