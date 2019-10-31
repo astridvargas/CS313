@@ -145,6 +145,20 @@ $db = get_db();
                             // $userAddress_id = $row['userAddress_id'];
                             // echo "<p><strong> $user </strong><p>";
                             // echo "<p><strong> $telephone </strong><p>";
+
+                        echo '<div class="tableContainer">
+                            <table class="highlight">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone Number</th>
+                                    <th>Address</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>';
                             echo "<p><strong>$name - $telephone - $address </strong><p>";
                         }
                     ?>
