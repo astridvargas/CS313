@@ -4,9 +4,9 @@ require_once('dbConnect.php');
 $db = get_db();
 try {
     if($_POST['action'] == 'create') {
-        $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-        $number = filter_var($_POST['number'], FILTER_SANITIZE_STRING);
-        $address = filter_var($_POST['address'], FILTER_SANITIZE_STRING);
+        $name = $_POST['name'];
+        $number = $_POST['number'];
+        $address = $_POST['address'];
     
         $stmt = $db->prepare('INSERT into contacts
         (_name, _telephone, _address)
