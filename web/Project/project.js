@@ -46,10 +46,7 @@ function addToDB(data) {
         'contactsModel.php',
         {
             method: 'POST',
-            body: data,
-            headers: {
-                'Content-Type': 'text/html'
-            }
+            body: data
         }
     )
     .then(response => {
