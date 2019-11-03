@@ -15,6 +15,7 @@ if($_POST['action'] == 'create') {
     $stmt->bindValue(':_telephone', $telephone, PDO::PARAM_STR);
     $stmt->bindValue(':_address', $address, PDO::PARAM_STR);
     
+    $stmt->execute();
 }
 
 ?>

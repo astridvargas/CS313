@@ -55,7 +55,7 @@ function addToDB(data) {
     .then(response => {
         if(response.ok) {
             console.log(response)
-            return response;
+            return response.text();
         } else {
             console.log("Problem with insertion datga")
         }
