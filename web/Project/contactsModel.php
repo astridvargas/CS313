@@ -1,7 +1,7 @@
 <?php
 require_once('dbConnect.php');
 
-$db = get_db()
+$db = get_db();
 if($_POST['action'] == 'create') {
     $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
     $number = filter_var($_POST['number'], FILTER_SANITIZE_STRING);
