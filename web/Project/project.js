@@ -75,7 +75,6 @@ function areTheInputsEmpty(message, type) {
         setTimeout(() => {
             notification.classList.remove('visible');
             
-            
             setTimeout(() => {
                 notification.remove();
             }, 500)
