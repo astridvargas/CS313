@@ -29,7 +29,10 @@ function readForm(e) {
         console.log(...contactInfo);
 
         if(action === 'create') {
-            addToDB(contactInfo);
+            const dataCreate = addToDB(contactInfo);
+            dataCreate.then(data => {
+                console.log(data);
+            });
         }
         else {
 
@@ -39,17 +42,24 @@ function readForm(e) {
 
 // Add to Database through Ajax
 function addToDB(data) {
-    const xhr = new XMLHttpRequest();
-
-    xhr.open('POST', 'contactsModel.php', true);
-
-    xhr.onload = function() {
-        if(this.status === 200) {
-            const answer = JSON.parse(xhr.responseText);
+    return fetch(
+        'contactsModel.php',
+        {
+            method: 'POST',
+            body: data,
+            headers: {
+                'Content-Type': 'text/html'
+            }
         }
-    }
-
-    xhr.send(data);
+    )
+    .then(response => {
+        if(response.ok) {
+            console.log(response)
+            return response;
+        } else {
+            console.log("Problem with insertion datga")
+        }
+    })
 }
 
 // Check if the text inputs are empty

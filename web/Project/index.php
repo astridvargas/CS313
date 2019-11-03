@@ -64,6 +64,8 @@ $db = get_db();
                     <div class="center">
                         <p class="total">Total: <span>2</span> Contacts</p>
                     </div>
+
+                    <!-- Display Values from Database to the table on the screen -->
                 
                     <?php
 
@@ -118,6 +120,7 @@ $db = get_db();
     </div>
 
     <script src="project.js" async defer></script>
+    <script src="addContact.js" async defer></script>
 
 </body>
 </html>
