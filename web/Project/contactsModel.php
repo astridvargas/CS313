@@ -5,7 +5,7 @@ $db = get_db();
 try {
     if($_POST['action'] == 'create') {
         $name = $_POST['name'];
-        $number = $_POST['number'];
+        $telephone = $_POST['number'];
         $address = $_POST['address'];
     
         $stmt = $db->prepare('INSERT into contacts
