@@ -17,8 +17,6 @@ try {
         $stmt->bindValue(':_address', $address, PDO::PARAM_STR);
         
         $stmt->execute();
-
-        echo 'Insertion worked!';
     }    
 } catch (PDOException $ex) {
     echo "Error connecting to DB. Details: $ex";

@@ -72,7 +72,7 @@ $db = get_db();
                         $statement = $db->prepare("SELECT * FROM contacts");
                         $statement->execute();
 
-                        echo '<div class="tableContainer">
+                        echo '<div id="contactsList" class="tableContainer">
                             <table class="highlight">
                             <thead>
                                 <tr>

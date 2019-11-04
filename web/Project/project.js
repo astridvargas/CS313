@@ -1,9 +1,13 @@
 const contacts = document.querySelector('#contact');
+const contactsList = document.querySelector('#contactsList tbody');
 
 eventListener();
 
 function eventListener() {
     contacts.addEventListener('submit', readForm);
+
+    // Listener to delete
+    contacts.addEventListener('click', deleteContact);
 }
 
 function readForm(e) {
@@ -58,6 +62,38 @@ function addToDB(data) {
         }
     })
 }
+
+// Delete Contacts
+function deleteContact() {
+    console.log('Click!');
+}
+
+// Edit and delete items in database
+
+// function editAndDelete(data) {
+//     const xhr = new XMLHttpRequest();
+
+//     xhr.open('POST', 'contactsModel.php', true);
+
+//     xhr.onload = function() {
+//         if (this.status === 200) {
+
+//             const buttonContainer = document.createElement('td');
+
+//             // Edit button  
+
+//             const editIcon = document.createElement('i');
+//             editIcon.classList.add('small', 'material-icons');
+
+//             const editConnection = document.createElement('a')
+//             editConnection.appendChild(editIcon);
+//             editConnection.href = 'editContact.php?id=${response.data.}';
+
+//         }
+//     }
+
+//     xhr.send(data);
+// }
 
 // Check if the text inputs are empty
 function areTheInputsEmpty(message, type) {
